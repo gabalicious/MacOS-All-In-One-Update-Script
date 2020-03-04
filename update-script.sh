@@ -1,7 +1,7 @@
 #!/bin/bash
 #Text Color Variables
 LG='\033[1;32m' #Light Green
-NC='\033[0m' #No Color
+NC='\033[0m'    #No Color
 echo -e "${LG}Updating Brew Formula's${NC}"
 brew update
 brew upgrade
@@ -15,6 +15,7 @@ brew cleanup -s
 
 echo -e "\n${LG}Brew Diagnostics${NC}"
 brew doctor
+brew cask doctor
 brew missing
 
 echo -e "\n${LG}Updating App Store Applications${NC}"
