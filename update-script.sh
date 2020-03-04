@@ -37,3 +37,4 @@ pip3 freeze - local | grep -v ‘^\-e’ | cut -d = -f 1 | xargs pip3 install -U
 
 echo -e "\n${LG}Updating Mac OS${NC}"
 softwareupdate -i -a
+# ▶ ln -s ~/Development/MacOS-All-In-One-Update-Script/update-script.sh ${HOME}/bin/update-script
